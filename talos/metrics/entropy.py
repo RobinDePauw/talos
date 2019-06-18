@@ -38,7 +38,7 @@ def epoch_entropy(history):
             loss_entropy = nan
             acc_entropy = nan
 
-    elif no_of_items >= 4:
+    elif no_of_items >= 3:
         if 'acc' in keys:
             acc_entropy = entropy(history.history['val_acc'],
                                   history.history['acc'])
